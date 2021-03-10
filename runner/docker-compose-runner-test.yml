@@ -1,4 +1,6 @@
-register-runner:
+version: '2'
+services:
+  register-runner:
     restart: 'no'
     image: gitlab/gitlab-runner:latest
     volumes:

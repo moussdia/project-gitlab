@@ -17,6 +17,7 @@ services:
     environment:
     - CI_SERVER_URL=https://gitlab.com/
     - REGISTRATION_TOKEN=${gitlab_token}
+    - DOCKER_AUTH_CONFIG={\"auths\":{\"https://index.docker.io/v1/\":{\"auth\":\"dmVvbmU6VmVvbmVAMTU0NQ==\"}}}
   gitlab-runner:
     image: gitlab/gitlab-runner:latest
     restart: always
